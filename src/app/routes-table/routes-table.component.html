@@ -1,0 +1,48 @@
+<div class="routes-table">
+  <table class="routes-table__table">
+    <thead class="routes-table__header">
+      <tr class="routes-table__row">
+        <th class="routes-table__cell">
+          <app-sortable-header 
+            field="address"
+            [direction]="sortField === 'address' ? sortDirection : ''"
+            (sortChange)="onSort('address', $event)">
+            Адрес назначения
+          </app-sortable-header>
+        </th>
+        <th class="routes-table__cell">Маска</th>
+        <th class="routes-table__cell">
+          <app-sortable-header 
+            field="gateway"
+            [direction]="sortField === 'gateway' ? sortDirection : ''"
+            (sortChange)="onSort('gateway', $event)">
+            Шлюз
+          </app-sortable-header>
+        </th>
+        <th class="routes-table__cell">
+          <app-sortable-header 
+            field="interface"
+            [direction]="sortField === 'interface' ? sortDirection : ''"
+            (sortChange)="onSort('interface', $event)">
+            Интерфейс
+          </app-sortable-header>
+        </th>
+      </tr>
+    </thead>
+    <tbody class="routes-table__body">
+      @if (loading) {
+        <tr class="routes-table__row">
+          <td class="routes-table__cell" colspan="4">Загрузка данных...</td>
+        </tr>
+      }
+      @for (route of sortedRoutes; track route.uuid) {
+        <tr class="routes-table__row">
+          <td class="routes-table__cell">{{ route.address }}/{{ route.mask }}</td>
+          <td class="routes-table__cell">{{ route.mask }}</td>
+          <td class="routes-table__cell">{{ route.gateway || '-' }}</td>
+          <td class="routes-table__cell">{{ route.interface }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+<div class="sortable-header" (click)="rotate()">
+  <span class="sortable-header__label"><ng-content></ng-content></span>
+  <span class="sortable-header__indicator">
+    @if (direction === 'asc') {
+      ↑
+    } @else if (direction === 'desc') {
+      ↓
+    }
+  </span>
+</div>

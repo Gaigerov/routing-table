@@ -1,0 +1,14 @@
+.sortable-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sortable-header__label {
+  user-select: none;
+}
+
+.sortable-header__indicator {
+  font-size: 12px;
+}
