@@ -1,11 +1,11 @@
 
 # Таблица маршрутов (Angular 18)
 
-[![Open in GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Open%20App-success)](https://Gaigerov.github.io/ndm-systems/routing-table/)
+[![Open in GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Open%20App-success)](https://Gaigerov.github.io/routing-table/)
 
 ## Как открыть приложение
 
-1. Перейдите по ссылке: [https://Gaigerov.github.io/ndm-systems/routing-table/](https://Gaigerov.github.io/ndm-systems/routing-table/)
+1. Перейдите по ссылке: [https://Gaigerov.github.io/routing-table/](https://Gaigerov.github.io/routing-table/)
 2. Или запустите локально:
 
 ```bash
@@ -38,7 +38,7 @@ ng serve
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/Gaigerov/routing-tablegit
+git clone https://github.com/Gaigerov/routing-table.git
 ```
 
 2. Установите зависимости:
